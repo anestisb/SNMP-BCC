@@ -46,7 +46,7 @@ Options:
 
 Backdoor PoC Client
 ===================
-A tiny PoC client written is perl is included to test SNMP-BCC under various
+A tiny PoC client backdoor written in perl is included to test SNMP-BCC under various
 setups. You can run the backdoor.pl at the client host to receive the commands
 over SNMP.
 After concluding to the tool's working protocol I'll implement a generation
