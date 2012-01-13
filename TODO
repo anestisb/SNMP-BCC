@@ -1,0 +1,6 @@
+A lot of things TODO as the tool is in its beta dev phase,
+and I still experiment with the concept behind the tool.
+
+I'll start implementing the basic features that a post exploitation 
+tool needs (Stealth Behavior, Encryption, Various Payload Formats etc),
+and continue with usuability and optimization features.
