@@ -1,13 +1,5 @@
 SNMP-BCC -- SNMP Backdoor Communication Channel
-
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
- ____  _   _ __  __ ____       ____   ____ ____ 
-/ ___|| \ | |  \/  |  _ \     | __ ) / ___/ ___|
-\___ \|  \| | |\/| | |_) |____|  _ \| |  | |    
- ___) | |\  | |  | |  __/_____| |_) | |__| |___ 
-|____/|_| \_|_|  |_|_|        |____/ \____\____|
-
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+===============================================
 
 Written by: Anestis Bechtsoudis @ bechtsoudis.com
 Copyright (C) 2012 Anestis Bechtsoudis
@@ -15,11 +7,13 @@ Copyright (C) 2012 Anestis Bechtsoudis
 
 Disclaimer
 ----------
+
 The tool is only for testing purposes and can only be used where strict consent has been given. Do not use it for illegal purposes.
 
 
 License
 -------
+
 Any modifications, changes, or alterations to this application is acceptable, however, any public releases utilizing this code must be approved by its creator. Check the LICENSE file for more information.
 
 
@@ -32,7 +26,8 @@ Requirements
 
 Usage
 -----
-`Usage: snmpbcc.pl [options]
+```bash
+Usage: snmpbcc.pl [options]
 
 Options:
   -c    SNMP Community String
@@ -41,11 +36,13 @@ Options:
 
   -r    SNMP Relay Service IP:PORT
 
-  -h    Display help message`
+  -h    Display help message
+````
 
 
 Backdoor PoC Client
 -------------------
+
 A tiny PoC client backdoor written in perl is included to test SNMP-BCC under various
 setups. You can run the backdoor.pl at the client host to receive the commands
 over SNMP.
@@ -55,5 +52,6 @@ engine for various backdoor payloads to use at client hosts.
 
 Examples
 --------
-## Send commands to 10.0.11.22:4444 using 10.0.12.52:161 as relay
+
+Send commands to 10.0.11.22:4444 using 10.0.12.52:161 as relay
 `./snmpbcc.pl -c public -t 10.0.11.22:4444 -r 10.0.12.52:161`
