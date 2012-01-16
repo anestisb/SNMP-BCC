@@ -109,7 +109,7 @@ sub cmd_send
     my $h_command = '';
 
     # Calculate OID based on $command
-    foreach my $c (unpack("C*", '#$#'.$command.'#$#')) {
+    foreach my $c (unpack("C*", $command)) {
         $h_command .= sprintf('%02x',$c);
     }
     # Prepend Type ID (0x06) and size (ASN.1 Format)
